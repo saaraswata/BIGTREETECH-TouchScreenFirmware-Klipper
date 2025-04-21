@@ -1267,6 +1267,8 @@ void parseAck(void)
         setupMachine(FW_REPRAPFW);
       else if (ack_continue_seen("Smoothieware"))
         setupMachine(FW_SMOOTHIEWARE);
+      else if (ack_continue_seen("Klipper"))
+        setupMachine(FW_Klipper);
       else
         setupMachine(FW_UNKNOWN);
 
